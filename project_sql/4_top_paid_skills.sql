@@ -18,10 +18,10 @@ INNER JOIN
     sjd.skill_id = sd.skill_id
 WHERE
     j.job_title_short = 'Data Analyst' AND
-    j.salary_year_avg IS NOT NULL AND
-    j.job_work_from_home = TRUE
+    j.job_country = 'India' AND
+    j.salary_year_avg IS NOT NULL 
 GROUP BY
     sd.skills
 ORDER BY
     avg_salary DESC
-LIMIT 25
+LIMIT 25;

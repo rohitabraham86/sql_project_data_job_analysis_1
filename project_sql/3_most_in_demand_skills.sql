@@ -19,9 +19,9 @@ INNER JOIN
     sjd.skill_id = sd.skill_id
 WHERE
     j.job_title_short = 'Data Analyst' AND
-    j.job_location = 'United Arab Emirates'
+    j.job_country = 'India'
 GROUP BY
     sd.skills
 ORDER BY
     demand_count DESC
-LIMIT 5
+LIMIT 5;
